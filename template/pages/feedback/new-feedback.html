@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Submit Feedback - Hospital Management System</title>
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.jpeg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/face5.jpg" alt="profile"/>
+              <span class="nav-profile-name">Eugenia Mullins</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="typcn typcn-cog-outline text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="typcn typcn-eject text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-user-status dropdown">
+              <p class="mb-0">Last login was 23 hours ago.</p>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-date dropdown">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+              <h6 class="date mb-0">Today : Mar 23</h6>
+              <i class="typcn typcn-calendar"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="typcn typcn-cog-outline mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    New product launch
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Upcoming board meeting
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-0">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="typcn typcn-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="typcn typcn-info mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="typcn typcn-cog-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="typcn typcn-user mx-0"></i> 
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="typcn typcn-th-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="typcn typcn-device-desktop menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#feedback">
+              <i class="typcn typcn-message-typing menu-icon"></i>
+              <span class="menu-title">Feedback & Complaints</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="feedback">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link active" href="new-feedback.html">Submit Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="list.html">View Feedback</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-8 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Patient Feedback & Complaint Form</h4>
+                  <form class="forms-sample">
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Personal Information</legend>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="fbPatientID">Patient ID (Optional)</label>
+                          <input type="text" class="form-control" id="fbPatientID" placeholder="Or select from list">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="fbName">Your Name</label>
+                          <input type="text" class="form-control" id="fbName" placeholder="Full Name" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="fbEmail">Email Address</label>
+                          <input type="email" class="form-control" id="fbEmail" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="fbPhone">Contact Number</label>
+                          <input type="tel" class="form-control" id="fbPhone" placeholder="9876543210" required>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Feedback Details</legend>
+                      <div class="form-group">
+                        <label for="fbType">Feedback Type</label>
+                        <select class="form-control" id="fbType" required>
+                          <option value="">-- Select Type --</option>
+                          <option value="compliment">Compliment</option>
+                          <option value="suggestion">Suggestion</option>
+                          <option value="complaint">Complaint</option>
+                          <option value="concern">Safety/Quality Concern</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="fbDepartment">Department/Service</label>
+                        <select class="form-control" id="fbDepartment">
+                          <option value="">-- Select Department --</option>
+                          <option value="general">General Medicine</option>
+                          <option value="cardiology">Cardiology</option>
+                          <option value="orthopedics">Orthopedics</option>
+                          <option value="neurology">Neurology</option>
+                          <option value="pediatrics">Pediatrics</option>
+                          <option value="surgery">Surgery</option>
+                          <option value="nursing">Nursing Care</option>
+                          <option value="reception">Reception/Admin</option>
+                          <option value="housekeeping">Housekeeping</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="fbStaff">Staff Member (if applicable)</label>
+                        <input type="text" class="form-control" id="fbStaff" placeholder="Name of doctor/staff member">
+                      </div>
+                      <div class="form-group">
+                        <label for="fbDate">Date of Experience</label>
+                        <input type="date" class="form-control" id="fbDate" required>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Feedback Content</legend>
+                      <div class="form-group">
+                        <label for="fbSubject">Subject</label>
+                        <input type="text" class="form-control" id="fbSubject" placeholder="Brief subject of your feedback" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="fbMessage">Detailed Feedback</label>
+                        <textarea class="form-control" id="fbMessage" rows="5" placeholder="Please provide detailed feedback or complaint" required></textarea>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Rating (Optional)</legend>
+                      <div class="form-group">
+                        <label>How would you rate your experience?</label>
+                        <div class="btn-group btn-group-toggle" role="group">
+                          <label class="btn btn-outline-danger">
+                            <input type="radio" name="rating" value="1"> Poor
+                          </label>
+                          <label class="btn btn-outline-warning">
+                            <input type="radio" name="rating" value="2"> Fair
+                          </label>
+                          <label class="btn btn-outline-warning">
+                            <input type="radio" name="rating" value="3"> Good
+                          </label>
+                          <label class="btn btn-outline-success">
+                            <input type="radio" name="rating" value="4"> Very Good
+                          </label>
+                          <label class="btn btn-outline-success">
+                            <input type="radio" name="rating" value="5"> Excellent
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Confidentiality</legend>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="confidential">
+                        <label class="custom-control-label" for="confidential">
+                          I would like this feedback to be kept confidential
+                        </label>
+                      </div>
+                      <div class="custom-control custom-checkbox mt-2">
+                        <input type="checkbox" class="custom-control-input" id="followup" required>
+                        <label class="custom-control-label" for="followup">
+                          I agree to the feedback submission and consent form
+                        </label>
+                      </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit Feedback</button>
+                    <button type="reset" class="btn btn-light">Clear</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Your Feedback Matters</h6>
+                  <ul class="list-unstyled">
+                    <li class="pb-2 border-bottom mb-2">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Help us improve our services</span>
+                    </li>
+                    <li class="pb-2 border-bottom mb-2">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Share your suggestions</span>
+                    </li>
+                    <li class="pb-2 border-bottom mb-2">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Report any issues promptly</span>
+                    </li>
+                    <li class="pb-2 mb-3">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Your privacy is protected</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Feedback Types</h6>
+                  <div class="mb-2">
+                    <span class="badge badge-success">Compliment</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="badge badge-info">Suggestion</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="badge badge-danger">Complaint</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="badge badge-warning">Safety Concern</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Contact Support</h6>
+                  <p class="text-muted mb-2">Need immediate assistance?</p>
+                  <p class="mb-0"><strong>Phone:</strong> 1800-123-4567</p>
+                  <p class="mb-0"><strong>Email:</strong> feedback@hospital.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+</body>
+
+</html>

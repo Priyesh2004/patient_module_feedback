@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Medical History - Hospital Management System</title>
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.jpeg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/face5.jpg" alt="profile"/>
+              <span class="nav-profile-name">Eugenia Mullins</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="typcn typcn-cog-outline text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="typcn typcn-eject text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-user-status dropdown">
+              <p class="mb-0">Last login was 23 hours ago.</p>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-date dropdown">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+              <h6 class="date mb-0">Today : Mar 23</h6>
+              <i class="typcn typcn-calendar"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="typcn typcn-cog-outline mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    New product launch
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Upcoming board meeting
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-0">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="typcn typcn-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="typcn typcn-info mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="typcn typcn-cog-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="typcn typcn-user mx-0"></i> 
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="typcn typcn-th-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="typcn typcn-device-desktop menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#patients" aria-expanded="false">
+              <i class="typcn typcn-user menu-icon"></i>
+              <span class="menu-title">Patient Management</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="patients">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="registration.html">New Registration</a></li>
+                <li class="nav-item"><a class="nav-link" href="list.html">Patient List</a></li>
+                <li class="nav-item"><a class="nav-link active" href="medical-history.html">Medical History</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Patient Medical History</h4>
+                  <div class="form-group row mb-4">
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" placeholder="Search by Patient ID/Name" id="searchPatient">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="date" class="form-control" id="fromDate" placeholder="From Date">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="date" class="form-control" id="toDate" placeholder="To Date">
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Patient</th>
+                          <th>Visit Date</th>
+                          <th>Chief Complaint</th>
+                          <th>Diagnosis</th>
+                          <th>Treatment</th>
+                          <th>Doctor</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Rajesh Kumar (#P001)</td>
+                          <td>2024-01-20</td>
+                          <td>Chest Pain</td>
+                          <td>Cardiac Arrhythmia</td>
+                          <td>ECG, Medication</td>
+                          <td>Dr. Patel</td>
+                          <td><span class="badge badge-success">Treated</span></td>
+                          <td>
+                            <button class="btn btn-sm btn-primary"><i class="typcn typcn-eye"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Priya Singh (#P002)</td>
+                          <td>2024-01-18</td>
+                          <td>Knee Pain</td>
+                          <td>Osteoarthritis</td>
+                          <td>Physical Therapy</td>
+                          <td>Dr. Sharma</td>
+                          <td><span class="badge badge-info">Ongoing</span></td>
+                          <td>
+                            <button class="btn btn-sm btn-primary"><i class="typcn typcn-eye"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Amit Gupta (#P003)</td>
+                          <td>2024-01-16</td>
+                          <td>Headache & Dizziness</td>
+                          <td>Migraine</td>
+                          <td>Medication, Rest</td>
+                          <td>Dr. Verma</td>
+                          <td><span class="badge badge-success">Treated</span></td>
+                          <td>
+                            <button class="btn btn-sm btn-primary"><i class="typcn typcn-eye"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Patient History Summary - Rajesh Kumar (#P001)</h6>
+                  <div class="list-item pb-3 border-bottom">
+                    <p class="text-muted mb-1">Blood Group: <strong>B+</strong></p>
+                    <p class="text-muted mb-1">Age: <strong>45 Years</strong></p>
+                    <p class="text-muted mb-0">Allergies: <strong>Penicillin</strong></p>
+                  </div>
+                  <div class="mt-3">
+                    <h6 class="mb-2">Previous Conditions:</h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><i class="typcn typcn-tick text-warning mr-2"></i>Hypertension</li>
+                      <li class="mb-2"><i class="typcn typcn-tick text-warning mr-2"></i>Diabetes Type 2</li>
+                      <li class="mb-2"><i class="typcn typcn-tick text-warning mr-2"></i>Cardiac Issues</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Current Medications</h6>
+                  <div class="list-item pb-2 border-bottom mb-2">
+                    <div class="d-flex justify-content-between">
+                      <span>Aspirin</span>
+                      <span class="badge badge-primary">100mg Daily</span>
+                    </div>
+                  </div>
+                  <div class="list-item pb-2 border-bottom mb-2">
+                    <div class="d-flex justify-content-between">
+                      <span>Metformin</span>
+                      <span class="badge badge-primary">500mg Twice</span>
+                    </div>
+                  </div>
+                  <div class="list-item pb-2 border-bottom mb-2">
+                    <div class="d-flex justify-content-between">
+                      <span>Lisinopril</span>
+                      <span class="badge badge-primary">10mg Daily</span>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Atorvastatin</span>
+                      <span class="badge badge-primary">20mg Daily</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+</body>
+
+</html>

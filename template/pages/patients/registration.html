@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Patient Registration - Hospital Management System</title>
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.jpeg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/face5.jpg" alt="profile"/>
+              <span class="nav-profile-name">Dr. Admin</span>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="typcn typcn-th-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="typcn typcn-device-desktop menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#patients" aria-expanded="false" aria-controls="patients">
+              <i class="typcn typcn-user menu-icon"></i>
+              <span class="menu-title">Patient Management</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="patients">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link active" href="registration.html">New Registration</a></li>
+                <li class="nav-item"><a class="nav-link" href="list.html">Patient List</a></li>
+                <li class="nav-item"><a class="nav-link" href="medical-history.html">Medical History</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-8 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Patient Registration Form</h4>
+                  <form class="forms-sample">
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Personal Information</legend>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="firstName">First Name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="dateOfBirth">Date of Birth</label>
+                          <input type="date" class="form-control" id="dateOfBirth" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="gender">Gender</label>
+                          <select class="form-control" id="gender" required>
+                            <option value="">-- Select --</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="phone">Phone Number</label>
+                          <input type="tel" class="form-control" id="phone" placeholder="9876543210" required>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Contact Address</legend>
+                      <div class="form-group">
+                        <label for="street">Street Address</label>
+                        <input type="text" class="form-control" id="street" placeholder="House No. & Street Name" required>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="city">City</label>
+                          <input type="text" class="form-control" id="city" placeholder="City" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="state">State</label>
+                          <input type="text" class="form-control" id="state" placeholder="State" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="zipCode">Zip Code</label>
+                          <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" required>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Medical Information</legend>
+                      <div class="form-group">
+                        <label for="bloodGroup">Blood Group</label>
+                        <select class="form-control" id="bloodGroup" required>
+                          <option value="">-- Select Blood Group --</option>
+                          <option value="A+">A+</option>
+                          <option value="A-">A-</option>
+                          <option value="B+">B+</option>
+                          <option value="B-">B-</option>
+                          <option value="AB+">AB+</option>
+                          <option value="AB-">AB-</option>
+                          <option value="O+">O+</option>
+                          <option value="O-">O-</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="allergies">Known Allergies</label>
+                        <textarea class="form-control" id="allergies" rows="3" placeholder="List any allergies (medicines, food, etc.)"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="chronicDiseases">Chronic Diseases / Medical Conditions</label>
+                        <textarea class="form-control" id="chronicDiseases" rows="3" placeholder="List any chronic conditions (Diabetes, BP, etc.)"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="currentMedications">Current Medications</label>
+                        <textarea class="form-control" id="currentMedications" rows="3" placeholder="List current medications with dosage"></textarea>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                      <legend class="text-primary mb-3">Emergency Contact</legend>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="emergencyName">Contact Person Name</label>
+                          <input type="text" class="form-control" id="emergencyName" placeholder="Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="emergencyRelation">Relation</label>
+                          <input type="text" class="form-control" id="emergencyRelation" placeholder="Relation" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="emergencyPhone">Contact Number</label>
+                        <input type="tel" class="form-control" id="emergencyPhone" placeholder="9876543210" required>
+                      </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary mr-2">Register Patient</button>
+                    <button type="reset" class="btn btn-light">Clear</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title mb-4">Registration Guidelines</h6>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Complete all required fields</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Ensure accurate contact information</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Provide complete medical history</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>List all allergies and medications</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="typcn typcn-tick text-success mr-2"></i>
+                      <span>Emergency contact is mandatory</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Required Documents</h6>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <span class="badge badge-light">Aadhar/ID Proof</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="badge badge-light">Address Proof</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="badge badge-light">Previous Medical Reports</span>
+                    </li>
+                    <li class="mb-2">
+                      <span class="badge badge-light">Insurance Details</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+</body>
+
+</html>
