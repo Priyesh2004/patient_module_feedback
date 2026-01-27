@@ -12,6 +12,8 @@
 </head>
 
 <body>
+  <form method="POST" action="submit-feedback.php">
+
   <div class="container-scroller">
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
@@ -170,7 +172,7 @@
             <div class="collapse show" id="feedback">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link active" href="new-feedback.html">Submit Feedback</a></li>
-                <li class="nav-item"><a class="nav-link" href="list.html">View Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="list.php">View Feedback</a></li>
               </ul>
             </div>
           </li>
@@ -190,21 +192,21 @@
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="fbPatientID">Patient ID (Optional)</label>
-                          <input type="text" class="form-control" id="fbPatientID" placeholder="Or select from list">
+                          <input type="text" class="form-control" id="fbPatientID" name="fbPatientID"placeholder="Or select from list">
                         </div>
                         <div class="form-group col-md-6">
                           <label for="fbName">Your Name</label>
-                          <input type="text" class="form-control" id="fbName" placeholder="Full Name" required>
+                          <input type="text" class="form-control" id="fbName"  name="fbName"placeholder="Full Name" required>
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="fbEmail">Email Address</label>
-                          <input type="email" class="form-control" id="fbEmail" placeholder="your@email.com" required>
+                          <input type="email" class="form-control" id="fbEmail" name="fbEmail" placeholder="your@email.com" required>
                         </div>
                         <div class="form-group col-md-6">
                           <label for="fbPhone">Contact Number</label>
-                          <input type="tel" class="form-control" id="fbPhone" placeholder="9876543210" required>
+                          <input type="tel" class="form-control" id="fbPhone" name="fbPhone" placeholder="9876543210" required>
                         </div>
                       </div>
                     </fieldset>
@@ -213,7 +215,7 @@
                       <legend class="text-primary mb-3">Feedback Details</legend>
                       <div class="form-group">
                         <label for="fbType">Feedback Type</label>
-                        <select class="form-control" id="fbType" required>
+                        <select class="form-control" id="fbType" name="fbType" required>
                           <option value="">-- Select Type --</option>
                           <option value="compliment">Compliment</option>
                           <option value="suggestion">Suggestion</option>
@@ -223,7 +225,7 @@
                       </div>
                       <div class="form-group">
                         <label for="fbDepartment">Department/Service</label>
-                        <select class="form-control" id="fbDepartment">
+                        <select class="form-control" id="fbDepartment" name="fbDepartment" required>
                           <option value="">-- Select Department --</option>
                           <option value="general">General Medicine</option>
                           <option value="cardiology">Cardiology</option>
@@ -238,11 +240,11 @@
                       </div>
                       <div class="form-group">
                         <label for="fbStaff">Staff Member (if applicable)</label>
-                        <input type="text" class="form-control" id="fbStaff" placeholder="Name of doctor/staff member">
+                        <input type="text" class="form-control" id="fbStaff" name="fbStaff" placeholder="Name of doctor/staff member">
                       </div>
                       <div class="form-group">
                         <label for="fbDate">Date of Experience</label>
-                        <input type="date" class="form-control" id="fbDate" required>
+                        <input type="date" class="form-control" id="fbDate" name="fbDate" required>
                       </div>
                     </fieldset>
 
@@ -250,11 +252,11 @@
                       <legend class="text-primary mb-3">Feedback Content</legend>
                       <div class="form-group">
                         <label for="fbSubject">Subject</label>
-                        <input type="text" class="form-control" id="fbSubject" placeholder="Brief subject of your feedback" required>
+                        <input type="text" class="form-control" id="fbSubject" name="fbSubject" placeholder="Brief subject of your feedback" required>
                       </div>
                       <div class="form-group">
                         <label for="fbMessage">Detailed Feedback</label>
-                        <textarea class="form-control" id="fbMessage" rows="5" placeholder="Please provide detailed feedback or complaint" required></textarea>
+                        <textarea class="form-control" id="fbMessage" name="fbMessage" rows="5" placeholder="Please provide detailed feedback or complaint" required></textarea>
                       </div>
                     </fieldset>
 
@@ -285,13 +287,13 @@
                     <fieldset class="mb-4">
                       <legend class="text-primary mb-3">Confidentiality</legend>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="confidential">
+                        <input type="checkbox" class="custom-control-input" id="confidential" name="confidential">
                         <label class="custom-control-label" for="confidential">
                           I would like this feedback to be kept confidential
                         </label>
                       </div>
                       <div class="custom-control custom-checkbox mt-2">
-                        <input type="checkbox" class="custom-control-input" id="followup" required>
+                        <input type="checkbox" class="custom-control-input" id="followup" name="followup" required>
                         <label class="custom-control-label" for="followup">
                           I agree to the feedback submission and consent form
                         </label>
@@ -364,6 +366,7 @@
   <script src="../../js/off-canvas.js"></script>
   <script src="../../js/hoverable-collapse.js"></script>
   <script src="../../js/template.js"></script>
+  </form>
 </body>
 
 </html>
