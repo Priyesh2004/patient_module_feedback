@@ -140,7 +140,7 @@ session_destroy();
     <p>You have been securely logged out from the Hospital Feedback Management System.</p>
     
     <div class="button-group">
-      <a href="../../index.html" class="logout-button-secondary">
+      <a href="../../index.php" class="logout-button-secondary">
         <i class="typcn typcn-home"></i> Back to Dashboard
       </a>
       
